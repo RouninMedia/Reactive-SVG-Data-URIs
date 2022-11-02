@@ -1,16 +1,17 @@
 # Reactive SVG Data URIs
 *An approach which enables SVG Data URIs to be reactive, just as if they were inline `<svg>` elements*
 
+## Fail
+
 **N.B.** *I had high hopes for this approach. The intention was to deploy it on user-interfaces where the same SVG icon might appear on multiple buttons, many times over (always as Data URIs referenced by the CSS `background-image` property) and ensure that it remained as easy to dynamically update the presentation of the SVG icons as it would be if they were inline `<svg>` elements. I maintain that this **HTML + JS** approach **could** still be used in a relatively simple presentational environment, but otherwise I would advise deploying inline `<svg>` elements instead and styling them, straightforwardly with CSS.*
 
-
-The idea was:
+In two steps, the basic idea was:
 
 ### Step 1
 The SVG button icons would exist as Data URIs, referenced via the CSS `background-image` property
 
 ### Step 2
-Whenever the colours of an SVG icon need to change (e.g. when the user changes the app theme or updates the mode from *light mode* to *dark mode*, Javascript would grab either:
+Whenever the colours of an SVG icon need to update (e.g. when the user changes the app theme or updates the mode from *light mode* to *dark mode*, Javascript would grab either:
 
   - `let backgroundImage = myButton.style.getPropertyValue('background-image')`; or
   - `window.getComputedStyle(myButton).getPropertyValue('background-image')`
@@ -56,7 +57,7 @@ Some of these transformations required an additional `radial-gradient` component
 
 After transformation, all states of different sets of `<button>` elements required different `:hover` effects to apply. Some of these `:hover` effects were controlled via CSS alone, but others could only be presented via further javascript-initiated transformations.
 
-Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, then it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')` which, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
+Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, then it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')`. The latter, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
 
 _____
 
