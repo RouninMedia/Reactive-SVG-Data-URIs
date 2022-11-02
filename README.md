@@ -1,5 +1,5 @@
 # Reactive SVG Data URIs
-*An approach which enables SVG Data URIs to be reactive, just as if they were inline `<svg>` elements*
+*An approach which enables SVG Data URIs to maintain reactive presentation, just as if they were inline `<svg>` elements*
 
 ## Fail
 
