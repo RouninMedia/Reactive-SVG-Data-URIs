@@ -26,7 +26,7 @@ Thus the CSS determining the presentation of the SVG Data URI would update (via 
 
 _____
 
-## Findings
+## Findings:
 
 The two steps above sound simple enough in theory, and in a ***non-complex environment*** would, I'm certain, work perfectly well.
 
@@ -61,16 +61,20 @@ Some of these transformations required an additional `radial-gradient` component
 
 After transformation, all states of different sets of `<button>` elements required different `:hover` effects to apply. Some of these `:hover` effects were controlled via CSS alone, but others could only be presented via further javascript-initiated transformations.
 
-Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, then it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')`. The latter, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
+Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')`. The latter, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
 
 _____
 
-## Conclusion
+## Conclusion:
 I'm an avid fan of CSS and it's very unusual for me to want to do something like re-creating what CSS does naturally by using JavaScript to manipulate HTML attributes. I initially set about building this approach because when I introduced *dark mode* and *light mode* to the **JSON Rewriter** app, I saw that I needed to find a way to update the presentation of SVGs which were *already* in the form of *Data URIs* in the CSS.
 
 So I turned to JavaScript string manipulation.
 
-In fact the better solution (I realise, after two and a half weeks) would have been to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then continue to style everything normally via CSS.
+I anticipated this would be *incomplex* and *easily and quickly implemented*.
+
+What I did not anticipate is that the complexity would arise not from  the 32 different states or even the four different *types* of state but from the *10 different types of transformation* between the four different types of state.
+
+After two and a half weeks of wrangling with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then continue to style everything normally via CSS.
 
 
 
