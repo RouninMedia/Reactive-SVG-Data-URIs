@@ -33,10 +33,10 @@ The two steps above sound simple enough in theory, and in a ***non-complex envir
 But in the context into which I tried to introduce this approach which included the following:
 
  - **Four** distinct presentational schemes:
-   - 15 color themes in light mode
-   - 15 color themes in dark mode (with a presentation distinct from that of light mode)
-   - a *themeless* light mode (distinct from both the above)
-   - a *themeless* dark mode (distinct from all three above)
+   - **A:** 15 color themes in light mode
+   - **B:** 15 color themes in dark mode (with a presentation distinct from that of light mode)
+   - **C:** *themeless* light mode (distinct from both the above)
+   - **D:** *themeless* dark mode (distinct from all three above)
  - compatibility with an older version of **iOS Safari**
  - compatibility with an even older version of **macOS Safari**
 
