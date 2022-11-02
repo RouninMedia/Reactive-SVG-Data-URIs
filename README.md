@@ -5,7 +5,7 @@
 
 **N.B.** *I had high hopes for this approach. The intention was to deploy it on user-interfaces where the same SVG icon might appear on multiple buttons, many times over (always as a Data URI, referenced by the CSS `background-image` property) and ensure that it remained as easy to dynamically update the presentation of the SVG icon as it would be if it were an inline `<svg>` element.*
 
-*I maintain that this **HTML + JS** approach **could** still be used in a relatively simple presentational environment, but otherwise I would advise deploying inline `<svg>` elements instead and styling them, straightforwardly with CSS.*
+*I maintain that this **HTML + JS** approach **could** still be used in a relatively simple presentational environment, but otherwise I unhesitatingly advise deploying inline `<svg>` elements instead and styling them, straightforwardly with CSS.*
 
 In two steps, the basic idea was:
 
