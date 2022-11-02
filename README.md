@@ -53,6 +53,8 @@ I ran into the unanticipated complication that these four distinct  presentation
  - `C => D`
  - `D => C`
 
+Within these **10 separate types of transformation**:
+
 Sometimes a transformation could be effected by removing the inline `style` attribute of a `<button>` element, at other times, an inline `style` attribute would be added to the `<button>` element and, sometimes, the inline `style` attribute of the `<button>` element would be preserved and updated.
 
 Some of these transformations required an additional `radial-gradient` component of the `<button>` element's CSS `background-image` to be preserved, others for it to be updated.
