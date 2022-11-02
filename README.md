@@ -76,7 +76,7 @@ I anticipated this would be *incomplex* and *easily and quickly implemented*.
 
 What I did not anticipate is that the complexity would arise not from  the **32 different states** or even the **four different *types* of state** but from the ***10 different types of transformation*** *between* the four different types of state.
 
-After two and a half weeks tying and untying knots with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then continue to style everything normally via CSS.
+After two and a half weeks tying and untying knots with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then allow CSS to continue to style everything normally.
 
 
 
