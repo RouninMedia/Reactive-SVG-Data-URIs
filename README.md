@@ -68,7 +68,7 @@ Within these **10 separate types of transformation**:
 _____
 
 ## Conclusion:
-I've been an enthusiastic fan of CSS for nearly two decades and it's very unusual for me to want to do something like re-creating what CSS does naturally by using JavaScript to manipulate HTML attributes. I initially set about building this approach because when I introduced *dark mode* and *light mode* to the **JSON Rewriter** app, I saw that I needed to find a way to update the presentation of SVGs which were *already* in the form of *Data URIs* in the CSS.
+I've been an enthusiastic fan of CSS for nearly two decades. It's very unusual for me to want to do something like re-creating what CSS already does naturally by using JavaScript to manipulate HTML attributes. I initially set about building this approach because when I introduced *dark mode* and *light mode* to the **JSON Rewriter** app, I saw that I needed to find a way to update the presentation of SVGs which were *already* in the form of *Data URIs* in the CSS.
 
 So I turned to JavaScript string manipulation.
 
