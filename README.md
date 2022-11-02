@@ -68,15 +68,15 @@ Wherever an inline `style` attribute were present, a `background-image` value co
 _____
 
 ## Conclusion:
-I'm an avid fan of CSS and it's very unusual for me to want to do something like re-creating what CSS does naturally by using JavaScript to manipulate HTML attributes. I initially set about building this approach because when I introduced *dark mode* and *light mode* to the **JSON Rewriter** app, I saw that I needed to find a way to update the presentation of SVGs which were *already* in the form of *Data URIs* in the CSS.
+I've been an enthusiastic fan of CSS for nearly two decades and it's very unusual for me to want to do something like re-creating what CSS does naturally by using JavaScript to manipulate HTML attributes. I initially set about building this approach because when I introduced *dark mode* and *light mode* to the **JSON Rewriter** app, I saw that I needed to find a way to update the presentation of SVGs which were *already* in the form of *Data URIs* in the CSS.
 
 So I turned to JavaScript string manipulation.
 
 I anticipated this would be *incomplex* and *easily and quickly implemented*.
 
-What I did not anticipate is that the complexity would arise not from  the 32 different states or even the four different *types* of state but from the *10 different types of transformation* between the four different types of state.
+What I did not anticipate is that the complexity would arise not from  the **32 different states** or even the **four different *types* of state** but from the ***10 different types of transformation*** *between* the four different types of state.
 
-After two and a half weeks of wrangling with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then continue to style everything normally via CSS.
+After two and a half weeks tying and untying knots with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then continue to style everything normally via CSS.
 
 
 
