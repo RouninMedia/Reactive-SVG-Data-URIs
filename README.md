@@ -30,9 +30,9 @@ _____
 
 ## Findings:
 
-The two steps above sound simple enough in theory, and in a ***non-complex environment*** would, I'm certain, work perfectly well.
+The two steps above sound simple enough in theory, and in a ***non-complex presentational environment*** would, I'm certain, work perfectly well.
 
-But in the context into which I tried to introduce this approach which included the following:
+But in the presentational environment into which I tried to introduce this approach which included the following:
 
  - **Four** distinct presentational schemes:
    - **A:** 15 color themes in light mode
@@ -57,13 +57,13 @@ I ran into the unanticipated complication that these four distinct  presentation
 
 Within these **10 separate types of transformation**:
 
-Sometimes a transformation could be effected by removing the inline `style` attribute of a `<button>` element, at other times, an inline `style` attribute would be added to the `<button>` element and, sometimes, the inline `style` attribute of the `<button>` element would be preserved and updated.
+1) Sometimes a transformation could be effected by removing the inline `style` attribute of a `<button>` element, at other times, an inline `style` attribute would be added to the `<button>` element and, sometimes, the inline `style` attribute of the `<button>` element would be preserved and updated.
 
-Some of these transformations required an additional `radial-gradient` component of the `<button>` element's CSS `background-image` to be preserved, others for it to be updated.
+2) Some of these transformations required an additional `radial-gradient` component of the `<button>` element's CSS `background-image` to be preserved, others for it to be updated.
 
-After transformation, all states of different sets of `<button>` elements required different `:hover` effects to apply. Some of these `:hover` effects were controlled via CSS alone, but others could only be presented via further javascript-initiated transformations.
+3) After transformation, all states of different sets of `<button>` elements required different `:hover` effects to apply. Some of these `:hover` effects were controlled via CSS alone, but others could only be presented via further javascript-initiated transformations.
 
-Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')`. The latter, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
+4) Wherever an inline `style` attribute were present, a `background-image` value could be grabbed using `myButton.style.getPropertyValue('background-image')`. If the `style` attribute were absent, it would be necessary to use `window.getComputedStyle(myButton).getPropertyValue('background-image')`. The latter, when invoked multiple times, seemed noticeably slower on the older versions of Safari.
 
 _____
 
