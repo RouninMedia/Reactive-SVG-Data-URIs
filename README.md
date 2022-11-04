@@ -81,8 +81,8 @@ After two and a half weeks tying and untying knots with JavaScript, the complexi
 ________
 
 ## Bonus:
-When I resolved to turn all the *Data URIs* into inline `<svg>` elements, I realised I'd be able to remove a number of functions from my **JS**, but this would come at the cost of my **HTML** increasing substantially.
+When I resolved to turn all the *Data URIs* into inline `<svg>` elements, I realised I'd be able to remove a number of redundant functions from my **JS**, but this would come at the cost of my **HTML** increasing substantially.
 
 I wasn't certain, but I suspected the overall size of my app would increase - I hoped by not too much.
 
-In the event, I was surprised to discover the overall size of my app actually *decreased* by **21kB** from `188kB` to `167kB` - a decrease of **11%**.
+In the event, I was surprised to discover the overall size of my app actually *decreased* by **21kB** from `188kB` to `167kB` - a reduction of **11%**.
