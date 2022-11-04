@@ -85,4 +85,4 @@ When I resolved to turn all the *Data URIs* into inline `<svg>` elements, I real
 
 I wasn't certain, but I suspected the overall size of my app would increase - I hoped by not too much.
 
-In the event, the overall size of my app *decreased* by `21kB` from `188kB` to `167kB` - a decrease of **11%**.
+In the event, I was surprised to discover the overall size of my app actually *decreased* by **21kB** from `188kB` to `167kB` - a decrease of **11%**.
