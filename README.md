@@ -80,7 +80,7 @@ After two and a half weeks tying and untying knots with JavaScript, the complexi
 
 ________
 
-## Bonus
+## Bonus:
 When I resolved to turn all the *Data URIs* into inline `<svg>` elements, I realised I'd be able to remove a number of functions from my **JS**, but this would come at the cost of my **HTML** increasing substantially.
 
 I wasn't certain, but I suspected the overall size of my app would increase - I hoped by not too much.
