@@ -77,3 +77,12 @@ I anticipated this would be *incomplex* and *easily and quickly implemented*.
 What I did not anticipate is that the complexity would arise not from  the **32 different states** or even the **four different *types* of state** but from the ***10 different types of transformation*** *between* the four different types of state.
 
 After two and a half weeks tying and untying knots with JavaScript, the complexity of which genuinely surprised me, the far better, simpler, more practical solution (I now realise) is to replace the *Data URIs* in the CSS with inline `<svg>` elements in the HTML and then allow CSS to style everything normally.
+
+________
+
+## Bonus
+When I resolved to turn all the *Data URIs* into inline `<svg>` elements, I realised I'd be able to remove a number of functions from my **JS**, but this would come at the cost of my **HTML** increasing substantially.
+
+I wasn't certain, but I suspected the overall size of my app would increase - I hoped by not too much.
+
+In the event, the overall size of my app *decreased* by `21kB` from `188kB` to `167kB` - a decrease of **11%**.
